@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  
+  width: 414px;
+  margin: auto;
+}
+
+header {
+    /* BREAK */
+  background: #CF2B2B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 92px;
+  color: #ffffff;
+  padding: 8px 0px 18px 21px;
+  box-sizing: border-box;
+  position: fixed;
+  left: auto;
+  top: 0;
+  width: 414px;
+}
+
+header :nth-child(1) {
+  font-family: "Righteous", cursive;
+  font-size: 44px;
+  letter-spacing: -0.012em;
+  line-height: 55px;
+  height: 44px;
+  margin-bottom: 5px;
+}
+
+header :nth-child(2) {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.content {
+  padding-left: 19px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  margin-top: 123px;
+  margin-bottom: 92px;
+}
+
+.category {
+  
+  font-family: "Righteous", cursive;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.018em;
+  color: #333333;
+  margin-top: 27px;
+  margin-bottom: 17px;
+}
+
+
+
+.food_container {
+  
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.food_container :nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.food {
+  
+  width: 172px;
+  margin-right: 16px;
+  padding: 18px 14px 13px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food img {
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.food_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  margin-bottom: 4px;
+  height: 23px;
+}
+
+.food_description {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #a6a6a6;
+  margin-bottom: 5px;
+  height: 39px;
+}
+
+.food_price {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  height: 19px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 92px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 16px;
+}
+
+.button {
+  width: 364px;
+  height: 61px;
+  background: #cbcbcb;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.018em;
+  color: #ffffff;
+  white-space: normal;
+  padding: 0px 69px;
+  box-sizing: border-box;
+}
