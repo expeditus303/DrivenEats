@@ -10,6 +10,12 @@ body {
   margin: auto;
 }
 
+@media (max-width:  414px)  {
+  .body {
+    width: 100%;
+  }
+}
+
 header {
     /* BREAK */
   background: #CF2B2B;
@@ -83,6 +89,12 @@ header :nth-child(2) {
   justify-content: space-between;
 }
 
+.selected {
+  border-color: #32B72F;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .food img {
   border-radius: 4px;
   margin-bottom: 8px;
@@ -116,7 +128,7 @@ header :nth-child(2) {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 92px;
   position: fixed;
   bottom: 0;
@@ -139,4 +151,12 @@ header :nth-child(2) {
   white-space: normal;
   padding: 0px 69px;
   box-sizing: border-box;
+}
+
+.buttonActive {
+  background-color: #32B72F;;
+}
+
+.buttonHide {
+  display: none;
 }

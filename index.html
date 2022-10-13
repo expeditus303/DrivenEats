@@ -22,7 +22,7 @@
           <h2>Primeiro, seu prato</h2>
         </div>
         <div class="food_container">
-          <div class="food">
+          <div class="food" id="food1" onclick="selectFood1()">
             <img
               src="./files/frango_yin_yang 1.png"
               alt="foto do prato de frango"
@@ -33,7 +33,7 @@
             </p>
             <h4 class="food_price">R$ 14,90</h4>
           </div>
-          <div class="food">
+          <div class="food" id="food2" onclick="selectFood2()">
             <img
               src="./files/pizza.png"
               alt="foto do prato de frango"
@@ -44,7 +44,7 @@
             </p>
             <h4 class="food_price">R$ 25,90</h4>
           </div>
-          <div class="food">
+          <div class="food" id="food3" onclick="selectFood3()">
             <img
               src="./files/burguer.png"
               alt="foto do prato de frango"
@@ -60,7 +60,7 @@
           <h2>Agora, sua bebida</h2>
         </div>
         <div class="food_container">
-          <div class="food">
+          <div class="food" id="beverage1" onclick="selectBeverage1()">
             <img
               src="./files/coquinha_gelada 1.png"
               alt="foto de refrigerante"
@@ -69,7 +69,7 @@
             <p class="food_description">Lata 350ml</p>
             <h4 class="food_price">R$ 4,90</h4>
           </div>
-          <div class="food">
+          <div class="food" id="beverage2" onclick="selectBeverage2()">
             <img
               src="./files/juice.png"
               alt="foto de refrigerante"
@@ -78,7 +78,7 @@
             <p class="food_description">600ml direto da fruta</p>
             <h4 class="food_price">R$ 8,00</h4>
           </div>
-          <div class="food">
+          <div class="food" id="beverage3" onclick="selectBeverage3()">
             <img
               src="./files/beer.png"
               alt="foto de refrigerante"
@@ -92,7 +92,7 @@
           <h2>Por fim, sua sobremesa</h2>
         </div>
         <div class="food_container">
-          <div class="food">
+          <div class="food" id="dessert1" onclick="selectDessert1()">
             <img
               src="./files/pudim 1.png"
               alt="foto de pudim"
@@ -101,7 +101,7 @@
             <p class="food_description">Apenas pudim</p>
             <h4 class="food_price">R$ 7,90</h4>
           </div>
-          <div class="food">
+          <div class="food" id="dessert2" onclick="selectDessert2()">
             <img
               src="./files/bomba.png"
               alt="foto de pudim"
@@ -110,7 +110,7 @@
             <p class="food_description">de chocolate</p>
             <h4 class="food_price">R$ 5,00</h4>
           </div>
-          <div class="food">
+          <div class="food" id="dessert3" onclick="selectDessert3()">
             <img
               src="./files/icecream.png"
               alt="foto de pudim"
@@ -125,6 +125,10 @@
             <div class="footer">
                 <input type="button" value="Selecione os 3 itens para fechar o pedido" class="button">
             </div>
+
+            <div class="footer">
+              <input type="button" value="Fechar pedido" id='button' class="button buttonActive buttonHide" onclick="makeOrder()">
+          </div>
         </footer>
     </div>
 
