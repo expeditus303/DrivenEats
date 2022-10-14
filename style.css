@@ -87,6 +87,7 @@ header :nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .selected {
@@ -155,9 +156,98 @@ header :nth-child(2) {
 }
 
 .buttonActive {
-  background-color: #32B72F;;
+  background-color: #32B72F;
+  cursor: pointer;
 }
 
-.buttonHide {
+.checkOut {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 414px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -207px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkOutContainer {
+  background: #50D074;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  width: 377px;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkOutCategory {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+  width: 325px;
+}
+
+.checkOutTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 21px;
+  margin-bottom: 15px;
+}
+
+.checkOutTotal {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+}
+
+#checkOutOk {
+  background: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+  height: 52px;
+  width: 325px;
+  margin-top: 24px;
+  letter-spacing: 0.018em;
+  color: #50D074;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.checkOutCancelContainer {
+  height: 52px;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#checkOutCancel {
+  border: none;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: #50D074;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.018em;
+  cursor: pointer;
+}
+
+.hide {
   display: none;
 }

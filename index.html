@@ -121,13 +121,38 @@
           </div>
         </div>
 
+        <div class="checkOut hide">
+          <div class="checkOutContainer">
+            <p class="checkOutTitle">Confirme seu pedido</p>
+            <div class="checkOutCategory">
+              <p id="checkOutFood">Comida</p>
+              <p id="checkOutFoodPrice">Preço</p>
+            </div>
+            <div class="checkOutCategory">
+              <p id="checkOutBeverage">Bebida</p>
+              <p id="checkOutBeveragePrice">Preço</p>
+            </div>
+            <div class="checkOutCategory">
+              <p id="checkOutDessert">Sobremesa</p>
+              <p id="checkOutDessertPrice">Preço</p>
+            </div>
+            <div class="checkOutCategory checkOutTotal">
+              <p >Total</p>
+              <p id="checkOutTotalPrice">Preço</p>
+            </div>
+            
+            <input type="button" value="Tudo certo, pode pedir!" id="checkOutOk" onclick="checkOutOk()">
+            <div class="checkOutCancelContainer"><input type="button" value="Cancelar" id="checkOutCancel" onclick="checkOutCancel()"></div>
+          </div>
+        </div>
+
         <footer>
             <div class="footer">
                 <input type="button" value="Selecione 1 item de cada categoria para fechar o pedido" class="button">
             </div>
 
             <div class="footer">
-              <input type="button" value="Fechar pedido" id='button' class="button buttonActive buttonHide" onclick="makeOrder()">
+              <input type="button" value="Fechar pedido" id='button' class="button buttonActive hide" onclick="makeOrder()">
           </div>
         </footer>
     </div>
