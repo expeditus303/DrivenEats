@@ -132,7 +132,9 @@ header :nth-child(2) {
   height: 92px;
   position: fixed;
   bottom: 0;
+  left: 50%;
   margin-bottom: 16px;
+  margin-left: -182px;
 }
 
 .button {
@@ -149,7 +151,6 @@ header :nth-child(2) {
   letter-spacing: 0.018em;
   color: #ffffff;
   white-space: normal;
-  padding: 0px 69px;
   box-sizing: border-box;
 }
 
