@@ -141,8 +141,6 @@ function selectDessert3() {
 function makeOrder() {
   let totalValue = priceFood + priceBeverage + priceDessert;
   let totalValueFloat = totalValue.toFixed(2)
-  alert(totalValueFloat) 
-  alert(food + beverage + dessert)
 
   let message = (`Olá, gostaria de fazer o pedido:
   - Prato: ${food}
