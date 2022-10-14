@@ -142,11 +142,17 @@ function makeOrder() {
   let totalValue = priceFood + priceBeverage + priceDessert;
   let totalValueFloat = totalValue.toFixed(2)
 
+  let name = window.prompt('Por favor, digite o seu nome:')
+  let address = window.prompt('Por favor, digite o endereço de entrega:')
+
   let message = (`Olá, gostaria de fazer o pedido:
   - Prato: ${food}
   - Bebida: ${beverage}
   - Sobremesa: ${dessert}
-  Total: R$ ${totalValueFloat}`)
+  Total: R$ ${totalValueFloat}
+  
+  Nome: ${name}
+  Endereço: ${address}`)
 
   let encodeMessage = encodeURIComponent(message)
 
