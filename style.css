@@ -5,20 +5,19 @@ body {
 }
 
 .body {
-  
   width: 414px;
   margin: auto;
 }
 
-@media (max-width:  414px)  {
+@media (max-width: 414px) {
   .body {
     width: 100%;
   }
 }
 
 header {
-    /* BREAK */
-  background: #CF2B2B;
+  /* BREAK */
+  background: #cf2b2b;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 92px;
   color: #ffffff;
@@ -54,7 +53,6 @@ header :nth-child(2) {
 }
 
 .category {
-  
   font-family: "Righteous", cursive;
   font-size: 26px;
   line-height: 32px;
@@ -64,21 +62,13 @@ header :nth-child(2) {
   margin-bottom: 17px;
 }
 
-
-
 .food_container {
-  
   display: flex;
   justify-content: space-between;
   overflow-x: scroll;
 }
 
-.food_container :nth-last-child(1) {
-  margin-right: 0px;
-}
-
 .food {
-  
   width: 172px;
   margin-right: 16px;
   padding: 18px 14px 13px;
@@ -88,12 +78,20 @@ header :nth-child(2) {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  color: transparent;
+}
+
+.containerPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
 }
 
 .selected {
-  border-color: #32B72F;
+  border-color: #32b72f;
   border-width: 5px;
   border-style: solid;
+  color: #32b72f;
 }
 
 .food img {
@@ -120,7 +118,6 @@ header :nth-child(2) {
 }
 
 .food_price {
-  font-size: 16px;
   color: #000000;
   font-weight: 400;
   height: 19px;
@@ -145,7 +142,7 @@ header :nth-child(2) {
   border-radius: 50px;
   border: none;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 23px;
   text-align: center;
@@ -156,7 +153,7 @@ header :nth-child(2) {
 }
 
 .buttonActive {
-  background-color: #32B72F;
+  background-color: #32b72f;
   cursor: pointer;
 }
 
@@ -175,7 +172,7 @@ header :nth-child(2) {
 }
 
 .checkOutContainer {
-  background: #50D074;
+  background: #50d074;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   width: 377px;
@@ -213,14 +210,14 @@ header :nth-child(2) {
 }
 
 #checkOutOk {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 100px;
   border: none;
   height: 52px;
   width: 325px;
   margin-top: 24px;
   letter-spacing: 0.018em;
-  color: #50D074;
+  color: #50d074;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
@@ -239,7 +236,7 @@ header :nth-child(2) {
   border: none;
   margin-left: 30%;
   margin-right: 30%;
-  background-color: #50D074;
+  background-color: #50d074;
   color: white;
   font-weight: 700;
   font-size: 20px;
