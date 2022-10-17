@@ -85,18 +85,20 @@ function selectDessert(selector) {
 }
 
 function makeOrder() {
-  totalValueFloat = (priceFood + priceBeverage + priceDessert).toFixed(2);
+  totalValueFloat = (priceFood + priceBeverage + priceDessert)
+    .toFixed(2)
+    .replace(".", ",");
 
   checkOutFood.innerHTML = food;
-  checkOutFoodPrice.innerHTML = `R$ ${priceFood.toFixed(2).replace(".", ",")}`;
+  checkOutFoodPrice.innerHTML = `${priceFood.toFixed(2).replace(".", ",")}`;
 
   checkOutBeverage.innerHTML = beverage;
-  checkOutBeveragePrice.innerHTML = `R$ ${priceBeverage
+  checkOutBeveragePrice.innerHTML = `${priceBeverage
     .toFixed(2)
     .replace(".", ",")}`;
 
   checkOutDessert.innerHTML = dessert;
-  checkOutDessertPrice.innerHTML = `R$ ${priceDessert
+  checkOutDessertPrice.innerHTML = `${priceDessert
     .toFixed(2)
     .replace(".", ",")}`;
 
